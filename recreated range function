@@ -1,0 +1,14 @@
+# range function recreated
+
+def oraliq(min,max,qadam=""):
+    sonlar = []
+    while min<max:
+        if qadam == "":    
+            sonlar.append(min)
+            min += 1
+        else:
+            sonlar.append(min)
+            min += int(qadam)
+    return sonlar
+
+print(oraliq(0,101,10))
